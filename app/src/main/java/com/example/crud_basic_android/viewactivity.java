@@ -35,6 +35,7 @@ public class viewactivity extends AppCompatActivity {
 
     public void viewall(View view) {
 
+
         DbHelper db3=new DbHelper(this);
         Cursor c=db3.ViewAllData();
         StringBuilder sb=new StringBuilder();
