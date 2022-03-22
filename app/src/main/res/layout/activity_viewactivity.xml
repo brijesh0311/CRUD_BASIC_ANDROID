@@ -5,39 +5,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center_vertical"
-    tools:context=".MainActivity">
+    tools:context=".viewactivity">
 
-
-    <Button
-        android:id="@+id/button"
+    <EditText
+        android:id="@+id/stu_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="-1"
-        android:onClick="insert"
-        android:text="Insert" />
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter ID" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/find"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="-1"
-        android:onClick="update"
-        android:text="Update" />
+        android:onClick="search"
+        android:text="FIND" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/all_record"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="-1"
-        android:onClick="delete"
-        android:text="Delete" />
+        android:onClick="viewall"
+        android:text="ALL RECORDS" />
 
-    <Button
-        android:id="@+id/button4"
+    <TextView
+        android:id="@+id/tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="-1"
-        android:onClick="view"
-        android:text="View" />
+
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#DD1717"
+        android:textSize="25sp" />
 </LinearLayout>
